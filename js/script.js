@@ -2,6 +2,18 @@
 const inputSearch = document.querySelector('#search-input');
 const resultArtist = document.querySelector('#result-artist');
 const resultPlaylist = document.querySelector('#result-playlists');
+const greetingTitle = document.querySelector('#greeting');
+const dateTime = new Date().getHours();
+console.log(dateTime);
+
+// Greeting Conditional
+if(dateTime >= 6 && dateTime < 12) {
+    greetingTitle.textContent = 'Bom dia';
+} else if (dateTime >= 12 && dateTime < 18) {
+    greetingTitle.textContent = 'Boa tarde';
+} else if (dateTime >= 18){
+    greetingTitle.textContent = 'Boa noite';
+}
 
 // Condition Input
 inputSearch.addEventListener('input', () => {
@@ -37,7 +49,6 @@ async function apiDataQuery(searchTerm) {
         const response = await fetch(apiUrl);
         let data = await response.json();
 
-        // Filtro temporario:
         let filteredItems = [];
 
         for (let i = 0; i < data.length; i++) {
