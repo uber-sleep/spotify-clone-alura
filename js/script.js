@@ -11,7 +11,7 @@ if(dateTime >= 6 && dateTime < 12) {
     greetingTitle.textContent = 'Bom dia';
 } else if (dateTime >= 12 && dateTime < 18) {
     greetingTitle.textContent = 'Boa tarde';
-} else if (dateTime >= 18){
+} else if (dateTime >= 18 || dateTime < 6){
     greetingTitle.textContent = 'Boa noite';
 }
 

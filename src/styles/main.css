@@ -127,10 +127,11 @@ button.login {
 
   .offer__scroll-container::-webkit-scrollbar {
     width: 10px;
+    height: 0.01rem;
   }
   
   .offer__scroll-container::-webkit-scrollbar-thumb {
-    background-color: transparent;
+    background-color: #a7a7a70d;
   }
 
   .offer__scroll-container::-webkit-scrollbar-thumb:hover {
