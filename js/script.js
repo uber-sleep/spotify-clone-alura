@@ -45,7 +45,7 @@ function displayResults (result) {
 
 async function apiDataQuery(searchTerm) {    
     try {
-        const apiUrl = `http://localhost:3000/artists`;
+        const apiUrl = `https://my-json-server.typicode.com/uber-sleep/spotify-fake-api/artists`;
         const response = await fetch(apiUrl);
         let data = await response.json();
 
