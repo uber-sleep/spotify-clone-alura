@@ -1,7 +1,6 @@
 /* HEADER */
 
 .main-container {
-    max-width: 80rem;
     margin-left: 20rem;
     margin-right: 3.5rem;
 }
@@ -48,7 +47,7 @@
 .header-search {
     display: flex;
     align-items: center;
-    width: 364px;
+    width: calc(80rem - 20%);
     height: 48px;
     margin-left: 8px;
     border-radius: 500px;
@@ -118,11 +117,11 @@ button.login {
     font-weight: 700;
   }
 
-/* SCROLL */
-.offer__scroll-container {
-    max-height: 43vh;
-    margin: 24px;
-    overflow-y: auto;
+  /* SCROLL */
+  .offer__scroll-container {
+      max-height: 43vh;
+      margin: 24px;
+      overflow: scroll;
   }
 
   .offer__scroll-container::-webkit-scrollbar {
